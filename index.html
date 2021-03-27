@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedro Sousa</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="modo_claro">  
+    <section> 
+        <img id="pinner" class="img-perfil" src="assets/img/piner.jpg">
+        <h1>Pedro Sousa</h1>
+        <button id="dark">escuro</button>
+        <button id="day">claro</button>
+    </section>
+    <section>
+        <h2>Sobre mim</h2>
+        <p> 
+            Meu nome é Pedro Alysson, faço Ensino Médio integrado ao técnico em Informática no Instituto Federal de São Paulo.
+        </p>
+        <p>
+            Já estagiei na instituição de ensino Faculdade Impacta e estou em busca de novas oportunidades.
+        </p>
+    </section>
+    <section>
+        <h2>Resumo de Qualificações</h2>
+        <ul>
+            <li>Conhecimento na área Software</li>
+            <li>Manutenção e Instalação de Software</li>
+            <li>Manutenção de Hardware</li>
+            <li>Conhecimento na área de Programação</li>
+            <li>Estágio Faculdade Impacta(2019-2020).</li>
+            <li>Instalação, manutenção e formatação de Sistema Operacional(Windows 7, 10 e Xp)</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Ferramentas e tecnologias conhecidas</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>C++</li>
+            <li>Java</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Contato</h2>
+        <ul>
+            <li>Telefone: 11 968589964</li>
+            <li>E-mail: pedrokasso2003@gmail.com</li>
+            <li>Rua da Primavera 466, Parque Náutico Mairiporã-SP</li>
+        </ul>
+    </section>
+</body>
+<script>
+    var coriba=document.getElementById("pinner");
+    coriba.onmouseover=function(){
+        coriba.classList.remove("foto_sem_mouse");
+        coriba.classList.add("foto_com_mouse");
+    }
+    coriba.onmouseleave=function(){
+        coriba.classList.remove("foto_com_mouse");
+        coriba.classList.add("foto_sem_mouse");
+    }
+</script>
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script>    
+    $(document).ready(function(){
+        $("#dark").click(function(){
+            $("body").removeClass("modo_claro");
+            $("body").addClass("modo_escuro");
+        });
+        $("#day").click(function(){
+            $("body").removeClass("modo_escuro");
+            $("body").addClass("modo_claro");
+        });
+    });
+</script>
+</html>

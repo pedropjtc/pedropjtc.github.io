@@ -1,0 +1,32 @@
+ .img-perfil{
+    border-radius: 100%;
+    width: 200px;
+    border: 1px solid black;
+} 
+
+body{
+    background-color: whitesmoke;
+    color:black;
+}
+.foto_com_mouse{
+    width: 400px;
+    height: auto;
+    transition: 2.2s;
+}
+.foto_sem_mouse{
+    border-radius: 100%;
+    width: 200px;
+    border: 1px solid black;
+    transition: 2.2s;
+}
+.modo_escuro{
+    background-color: black;
+    color:white;
+    transition: 1.2s;
+}
+.modo_claro{
+    background-color: whitesmoke;
+    color: black;
+    transition: 1.2s;
+
+}
